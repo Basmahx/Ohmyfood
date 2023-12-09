@@ -1,0 +1,19 @@
+
+$darkGray: #353535;
+
+footer {
+    background-color: $darkGray;
+    color: white;
+    padding-left: 25px;
+
+    .footer_title {
+      font-family: "Shrikhand", cursive;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    a {
+      color: white;
+      padding-left: 12px;
+    }
+  }

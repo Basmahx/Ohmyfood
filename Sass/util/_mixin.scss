@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+@mixin btn {
+    height: 50px; 
+    width: 218px;
+    margin: 2em;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom,  v.$secondary-color, v.$primary-color); 
+  
+    // &:hover {
+    //     // the hover styles
+    // }
+
+}

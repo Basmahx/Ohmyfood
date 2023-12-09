@@ -1,0 +1,27 @@
+
+$lightGray: #EAEAEA; // to delete
+
+
+.location {
+    background-color: $lightGray;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    .fa-location-dot {
+        padding-right: 1em;
+    }
+}
+
+// .logo {
+//     background-color: $white; 
+// }
+
+img {
+    width: 197px;
+    height: 36px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+}

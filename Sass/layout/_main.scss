@@ -1,0 +1,152 @@
+@use '../util' as u;
+
+
+
+
+/*** explor & btn ***/ 
+
+.titre-btn {
+    background-color: u.$lighterGray;
+    text-align: center;
+}
+
+.intro-titre  p {
+    color: #353535;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.intro-titre h1 {
+    margin-top: 0;
+    padding-top: 28px;
+}
+
+.btn {
+    @include u.btn; 
+}
+
+/*** fonctionnement ***/
+
+.fonctionnement {
+    background-color: u.$white;
+    margin-bottom: 50px;
+
+    h2 {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    &__list {
+        padding-left: 0;
+
+
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 0.5em;
+            margin: 1.5em 1.5em;
+            font-weight: 500;
+            border-radius: 25px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            background-color: u.$lighterGray;
+
+            i {
+                color: u.$Gray;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+
+            .fa-store {
+                color: u.$primary-color;
+            }
+        }
+
+        &--number {
+            background-color: u.$primary-color;        
+            color: white;
+            border-radius: 50%;
+            padding: 0.2em;
+            margin-left: -1.3em;
+            width: 1em;
+            text-align: center;
+        }
+
+    }
+}
+
+
+
+/*** restaurants ***/
+
+.restaurants {
+    background-color: u.$lighterGray;
+
+    h2 {
+        margin: 0;
+        padding-top: 1.5em;
+        padding-left: 1.2em;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.restaurants-cards {
+    flex-direction: column;
+    margin-top: 0px;
+    row-gap: 20px;
+    column-gap: 10px;
+    
+    
+    .card  {
+       max-width: none;
+       // width: 100%;
+       gap: 4px;
+       // padding: 10px;
+       border-radius: 20px;
+       margin: 1.5em;
+       height: 207.25px;
+    }
+
+    a {
+        height: 100%;
+        display: block;
+        color: #000;
+    }
+
+    img {
+        width: 100%;
+        height: 124px;
+        border-radius: 20px 20px 0 0 ;
+    }
+
+
+    .card-content {
+        width: 100%;
+        display: block;
+        padding-left: 10px;;
+          
+    }
+
+    .card-title {
+        margin-top: 10px;
+        margin-bottom: 0;
+       
+    }
+
+    .card-subtitle {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 300;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
