@@ -1,0 +1,75 @@
+@use '../util' as u;
+
+
+.header {
+    display: flex;
+    align-items: center; // requires modification 
+
+    &_arrow {
+        padding-left: 1em;
+        font-size: 1.5em;
+        // margin-top: 20px;  // requires modification 
+        
+
+        a {
+            color: #000;
+        }
+    }
+
+    &_logo {
+        flex-basis: 90%;
+    }
+
+}
+
+
+.menu {
+    background-color: u.$lighterGray;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    // position: relative;
+    margin-top: -3em;
+
+    // .entrees {
+
+    // }
+
+}
+
+
+.menu_pic {
+    box-sizing: border-box;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 275px;
+        margin: 0;
+    }
+}
+
+
+.banner {
+    background-color: u.$lighterGray;
+    font-family: "Shrikhand", cursive;
+    border-radius: 25px 25px 0 0;
+}
+
+
+
+section {
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-weight: 300;
+  }
+}
+
+
+
+.order-btn {
+    @include u.btn; 
+}
