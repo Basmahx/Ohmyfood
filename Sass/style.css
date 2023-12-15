@@ -287,6 +287,6 @@ footer a {
 }
 
 .btn-container {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
