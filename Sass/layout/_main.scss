@@ -49,7 +49,7 @@
             padding: 0.5em;
             margin: 1.5em 1.5em;
             font-weight: 500;
-            border-radius: 25px;
+            border-radius: 20px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
             background-color: u.$lighterGray;
 
@@ -123,6 +123,7 @@
         width: 100%;
         height: 124px;
         border-radius: 20px 20px 0 0 ;
+        object-fit: cover;
     }
 
 

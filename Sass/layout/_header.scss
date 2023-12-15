@@ -1,9 +1,15 @@
 
-$lightGray: #EAEAEA; // to delete
+@use '../util' as u;
 
+
+// .logo .img {
+//     width: 162px;
+//     height: 44px;
+
+// }
 
 .location {
-    background-color: $lightGray;
+    background-color: #EAEAEA;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -12,10 +18,6 @@ $lightGray: #EAEAEA; // to delete
         padding-right: 1em;
     }
 }
-
-// .logo {
-//     background-color: $white; 
-// }
 
 img {
     width: 197px;
