@@ -203,14 +203,6 @@ footer a {
   flex-basis: 90%;
 }
 
-.menu {
-  background-color: #F6F6F6;
-  border-radius: 25px 25px 0 0;
-  display: flex;
-  flex-direction: column;
-  margin-top: -3em;
-}
-
 .menu_pic {
   box-sizing: border-box;
 }
@@ -222,26 +214,79 @@ footer a {
   margin: 0;
 }
 
-.banner {
+.container {
   background-color: #F6F6F6;
-  font-family: "Shrikhand", cursive;
   border-radius: 25px 25px 0 0;
-}
-
-section {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-top: -3em;
 }
-section h2 {
+.container_banner {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  padding: 0.75em 0 0 1em;
+}
+.container_banner h1 {
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.menu h2 {
   font-weight: 300;
 }
 
-.order-btn {
-  height: 50px;
-  width: 218px;
-  margin: 2em;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.order__card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  height: 4.3em;
+  overflow: hidden;
+}
+.order__card__txt {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  flex: 1;
+  padding-left: 20px;
+}
+.order__card__txt h3 {
+  padding-top: 0.8em;
+  margin: 0;
+}
+.order__card__txt p {
+  font-weight: 300;
+  font-size: 15px;
+  padding-bottom: 12px;
+  margin: 0;
+}
+.order__card__price {
+  width: 4.3em;
+  height: 100%;
+  display: flex;
+  padding-top: 2.3em;
+  justify-content: center;
+}
+.order__card__price span {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn-container {
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */

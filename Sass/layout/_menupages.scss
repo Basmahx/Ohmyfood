@@ -23,53 +23,119 @@
 }
 
 
-.menu {
-    background-color: u.$lighterGray;
-    border-radius: 25px 25px 0 0;
-    display: flex;
-    flex-direction: column;
-    // position: relative;
-    margin-top: -3em;
-
-    // .entrees {
-
-    // }
-
-}
-
-
 .menu_pic {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: 275px;
-        margin: 0;
-    }
+  img {
+      object-fit: cover;
+      width: 100%;
+      height: 275px;
+      margin: 0;
+  }
 }
 
 
-.banner {
-    background-color: u.$lighterGray;
-    font-family: "Shrikhand", cursive;
-    border-radius: 25px 25px 0 0;
-}
-
-
-
-section {
-
+.container {
+    
+  background-color: u.$lighterGray;
+  border-radius: 25px 25px 0 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-top: -3em;
 
-  h2 {
-    font-weight: 300;
+  &_banner {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    padding: 0.75em 0 0 1em;
+    
+    h1 {
+      margin: 0;
+    }
   }
 }
 
 
 
-.order-btn {
-    @include u.btn; 
+
+.menu {
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  h2 {
+    font-weight: 300;
+  }
+
+
+}
+
+.order {
+    
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  
+  
+  &__card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    height: 4.3em;
+    overflow: hidden;
+  
+    &__txt {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      width: auto;
+      flex: 1;
+      padding-left: 20px;
+  
+  
+        h3 {
+          padding-top: 0.8em;
+          margin: 0;
+        }
+  
+        p {
+          font-weight: 300;
+          font-size: 15px;
+          padding-bottom: 12px;
+          margin: 0;
+        }
+  
+      }
+  
+      &__price {
+        width: 4.3em;
+        height: 100%;
+        display: flex;
+        padding-top: 2.3em;
+        justify-content: center;
+    
+          span {
+            font-weight: 700;
+            font-size: 15px;
+          }
+      }
+    }
+  
+  }
+  
+
+.btn-container {
+
+  margin-left: auto;
+  margin-right: auto;
+
+//   .btn {
+//     @include u.btn; 
+// }
 }
