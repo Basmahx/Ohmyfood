@@ -225,22 +225,36 @@ footer a {
 .container_banner {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  text-align: center;
   align-items: center;
   padding: 0.75em 0 0 1em;
 }
 .container_banner h1 {
   margin: 0;
+  font-size: 28px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 .menu h2 {
   font-weight: 300;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.menu .entrees, .menu .plats, .menu .desserts {
+  padding: 0px 13px 40px 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  border: 3px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 
 .order {
@@ -267,6 +281,7 @@ footer a {
 .order .order__card .order__txt h3 {
   padding-top: 0.8em;
   margin: 0;
+  font-size: 18px;
 }
 .order .order__card .order__txt p {
   font-weight: 300;
@@ -289,4 +304,5 @@ footer a {
 .btn-container {
   display: flex;
   justify-content: center;
+  background-color: #F6F6F6;
 }/*# sourceMappingURL=style.css.map */
