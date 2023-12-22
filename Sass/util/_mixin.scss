@@ -2,15 +2,20 @@
 
 @mixin btn {
     height: 50px; 
-    width: 218px;
+    width: 186px; 
     margin: 2em;
     border-radius: 25px;
     border: none;
     color: white;
     background: linear-gradient(to bottom,  v.$secondary-color, v.$primary-color); 
-  
-    // &:hover {
-    //     // the hover styles
-    // }
+    box-shadow: 0px 4px 10px 0px #00000040;
+    opacity: 1;
+    transition: all 250ms ease-in-out;
+    
+    
+    &:hover {
+      opacity: 0.85;
+      box-shadow: 0px 4px 15px 0px #00000059;
+    }
 
 }

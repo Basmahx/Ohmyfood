@@ -47,13 +47,16 @@
   &_banner {
     font-family: "Shrikhand", cursive;
     font-weight: 400;
-    // text-align: center;
-    align-items: center;
     padding: 0.75em 0 0 1em;
+    margin-top: 25px;
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
     h1 {
       margin: 0;
-      font-size: 28px;
+      // font-size: ;
     }
   }
 }
@@ -116,44 +119,85 @@
       padding-left: 20px;
   
   
-        h3 {
-          padding-top: 0.8em;
-          margin: 0;
-          font-size: 18px;
-        }
-  
-        p {
-          font-weight: 300;
-          font-size: 15px;
-          padding-bottom: 12px;
-          margin-top: 4px;
-        }
-  
+      h3 {
+        padding-top: 0.8em;
+        margin: 0;
+        font-size: 18px;
       }
   
-      &__price {
+      p {
+        font-weight: 300;
+        font-size: 15px;
+        padding-bottom: 12px;
+        margin-top: 4px;
+      }
+  
+    }
+
+    .order-card__price-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+
+      .order-card__price {
         width: 4.3em;
-        height: 100%;
+        // height: 100%;
         display: flex;
         padding-top: 2.3em;
         justify-content: center;
-    
-          span {
-            font-weight: 700;
-            font-size: 15px;
-          }
+        font-weight: 700;
+        font-size: 15px;    
       }
-    }
-  
+
+
+      .order-card__notif {
+        background-color: u.$light-green-background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // overflow: hidden;
+        // width: 0px;
+        height: 100%;
+        // transform: scale(0);
+        transition-duration: 0.3s;
+       
+        
+
+        .fa-circle-check {
+          color: white;
+          width: 20px;
+          height: 20px;
+        }
+
+       
+
+      }
+
+      &:hover> .order-card__notif {  // the hover should be over the card not here
+        margin: 0;
+        transition: all 0.8s;
+      }
+    
+
+     
   }
+  
+}
+
+  
+
+
 
 
 .btn-container {
   display: flex;
   justify-content: center;
-  background-color: u.$lighterGray;
+  background-color:  u.$lighterGray;
 
-//   .btn {
-//     @include u.btn; 
-// }
+  .btn {
+    @include u.btn; 
+    margin-top: 0;
+}
 }

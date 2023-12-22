@@ -36,12 +36,13 @@ a, a:visited, a:active {
 }
 
 img {
-  width: 197px;
-  height: 36px;
+  width: 162px;
+  height: 30px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 /*** explor & btn ***/
@@ -56,6 +57,10 @@ img {
   font-size: 18px;
 }
 
+.intro-titre {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .intro-titre h1 {
   margin-top: 0;
   padding-top: 28px;
@@ -63,12 +68,19 @@ img {
 
 .btn {
   height: 50px;
-  width: 218px;
+  width: 186px;
   margin: 2em;
   border-radius: 25px;
   border: none;
   color: white;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  opacity: 1;
+  transition: all 250ms ease-in-out;
+}
+.btn:hover {
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
 /*** fonctionnement ***/
@@ -76,12 +88,24 @@ img {
   background-color: #FFFFFF;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding: 0 5em 0 5em;
+  }
+}
 .fonctionnement h2 {
   padding: 20px;
   font-size: 24px;
 }
 .fonctionnement__list {
   padding-left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .fonctionnement__list li {
   display: flex;
@@ -95,6 +119,11 @@ img {
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   background-color: #F6F6F6;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__list li {
+    width: 335px;
+  }
 }
 .fonctionnement__list li i {
   color: #7E7E7E;
@@ -141,7 +170,25 @@ img {
   gap: 4px;
   border-radius: 20px;
   margin: 1.5em;
-  height: 207.25px;
+  height: 251px;
+  position: relative;
+}
+.restaurants-cards .card .notif {
+  height: 29px;
+  width: 80px;
+  border-radius: 2px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  z-index: 1;
+  background-color: #99E2D0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.restaurants-cards .card .notif__text {
+  padding: 0px 11px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
 }
 .restaurants-cards a {
   height: 100%;
@@ -150,27 +197,31 @@ img {
 }
 .restaurants-cards img {
   width: 100%;
-  height: 124px;
+  height: 70%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .restaurants-cards .card-content {
-  width: 100%;
+  width: 92%;
   display: block;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.restaurants-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 0;
+.restaurants-cards .card-content .card-txt {
+  margin: 0;
+  gap: 6;
 }
-.restaurants-cards .card-subtitle {
+.restaurants-cards .card-content .card-txt h3 {
+  margin: 0;
+}
+.restaurants-cards .card-content .card-txt p {
   margin: 0;
   font-size: 17px;
   font-weight: 300;
-}
-.restaurants-cards .card-subtitle p {
-  margin: 0;
+  padding-top: 4px;
 }
 
 footer {
@@ -225,12 +276,15 @@ footer a {
 .container_banner {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  align-items: center;
   padding: 0.75em 0 0 1em;
+  margin-top: 25px;
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .container_banner h1 {
   margin: 0;
-  font-size: 28px;
 }
 
 .menu {
@@ -289,20 +343,56 @@ footer a {
   padding-bottom: 12px;
   margin-top: 4px;
 }
-.order .order__card__price {
+.order .order__card .order-card__price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.order .order__card .order-card__price {
   width: 4.3em;
-  height: 100%;
   display: flex;
   padding-top: 2.3em;
   justify-content: center;
-}
-.order .order__card__price span {
   font-weight: 700;
   font-size: 15px;
+}
+.order .order__card .order-card__notif {
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.order .order__card .order-card__notif .fa-circle-check {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.order .order__card:hover > .order-card__notif {
+  margin: 0;
+  transition: all 0.8s;
 }
 
 .btn-container {
   display: flex;
   justify-content: center;
   background-color: #F6F6F6;
+}
+.btn-container .btn {
+  height: 50px;
+  width: 186px;
+  margin: 2em;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  opacity: 1;
+  transition: all 250ms ease-in-out;
+  margin-top: 0;
+}
+.btn-container .btn:hover {
+  opacity: 0.85;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }/*# sourceMappingURL=style.css.map */
