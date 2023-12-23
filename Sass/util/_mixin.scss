@@ -19,3 +19,9 @@
     }
 
 }
+
+@mixin ellipse {  // is cursed for some reason, and wont work properly 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

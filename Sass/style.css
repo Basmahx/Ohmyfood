@@ -408,7 +408,6 @@ footer .footer_list a {
   align-items: center;
 }
 .order .order__card .order-card__price {
-  width: 4.3em;
   display: flex;
   padding-top: 2.3em;
   justify-content: center;
@@ -420,17 +419,28 @@ footer .footer_list a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   height: 100%;
-  transition-duration: 0.3s;
+  transform: scaleX(0);
+  transition: width 600s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .order .order__card .order-card__notif .fa-circle-check {
   color: white;
-  width: 20px;
-  height: 20px;
+  font-size: 1.3em;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 400ms cubic-bezier(0.49, 0.18, 0.23, 1), transform 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.order .order__card:hover > .order-card__notif {
-  margin: 0;
-  transition: all 0.8s;
+.order .order__card:hover .order-card__notif {
+  width: 3.6em;
+  margin-left: 0.9em;
+  transform: scaleX(1);
+}
+.order .order__card:hover .fa-circle-check {
+  transform: scale(1);
+}
+.order .order__card:hover {
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.2);
 }
 
 .btn-container {
