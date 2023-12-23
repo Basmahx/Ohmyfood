@@ -11,7 +11,12 @@
     <title>Oh My Food</title>
 </head>
 <body>
-    
+    <div class="loader">
+        <div class="word">
+          
+        </div>
+    </div>
+
     <header>
         <div class="logo">
             <img src="Css-images/Images-textes/images/logo/ohmyfood.png" alt="..">
@@ -75,18 +80,19 @@
              
                 <article class="card">
                   <a href="#">
-                    <img src="Css-images/Images-textes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de">
-                     <div class="card-content">
+                     <img src="Css-images/Images-textes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de">
+                        <div class="card-content">
                         <div class="card-txt">
-                           <h3 class="card-title">La palette du goût
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
-                           </h3>
-                        </div> 
-                        <div class="card-subtitle">
+                           <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
+                           </div>
+                           <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                           </div>
                         </div>
-                     </div>
+                        <div class="notif">
+                             <span class="notif__text">Nouveau</span>
+                        </div>
                   </a>
                 </article>
 
@@ -96,14 +102,15 @@
                       <img src="Css-images/Images-textes/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de">
                        <div class="card-content">
                           <div class="card-txt">
-                             <h3 class="card-title">La note enchantée
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                             </h3>
+                             <h3>La note enchantée</h3>
+                             <p>Charonne</p>
                           </div> 
-                          <div class="card-subtitle">
-                            <p>Charonne</p>
-                          </div>
+                          <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                           </div>
+                       </div>
+                       <div class="notif">
+                        <span class="notif__text">Nouveau</span>
                        </div>
                     </a>
                 </article>
@@ -113,15 +120,12 @@
                       <img src="Css-images/Images-textes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image de">
                        <div class="card-content">
                           <div class="card-txt">
-                             <h3 class="card-title">À la française
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                             </h3>
-                             
+                             <h3>À la française</h3>
+                             <p>Cité Rouge</p>
                           </div> 
-                          <div class="card-subtitle">
-                            <p>Cité Rouge</p>
-                          </div>
+                          <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                           </div>
                        </div>
                     </a>
                 </article>
@@ -131,13 +135,11 @@
                       <img src="Css-images/Images-textes/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image de">
                        <div class="card-content">
                           <div class="card-txt">
-                             <h3 class="card-title">Le délice des sens
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                             </h3>
+                             <h3 class="card-title">Le délice des sens</h3>
+                             <p>Folie-Méricourt</p>
                           </div> 
-                          <div class="card-subtitle">
-                            <p>Folie-Méricourt</p>
+                          <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
                           </div>
                        </div>
                     </a>
@@ -153,11 +155,28 @@
         <div class="footer_title">
             <h2>Ohmyfood</h2>
         </div>
+        <div  class="footer_list">
         <p><i class="fa-solid fa-utensils"></i><a href="#"> Proposer un restaurant</a></p>
         <p><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></p>
         <p><a href="#">Mentions légales</a></p>
-        <p><a href="#">Contact</a></p>
+        <p><a href="mailto:contact@ohmyfood.com">Contact</a></p>
+        </div>
     </footer>
     
+    <!-- Loader-->
+
+    <div class="loader__overlay">
+        <div class="loader__content">
+            <h2 class="logo-food"></h2>
+            <div class="loader__circle-container">
+                <div class="loader__circle loader__circle--1"></div>
+                <div class="loader__circle loader__circle--2"></div>
+                <div class="loader__circle loader__circle--3"></div>
+                <div class="loader__circle loader__circle--4"></div>
+                <div class="loader__circle loader__circle--5"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

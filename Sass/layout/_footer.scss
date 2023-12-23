@@ -1,10 +1,21 @@
 
-$darkGray: #353535;
+@use '../util' as u;
+
+
 
 footer {
-    background-color: $darkGray;
+    background-color: u.$darkGray;
     color: white;
     padding-left: 25px;
+
+    @media screen and (min-width: u.$breakpoint) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 4em;
+      padding-top: 30px;
+      align-items: center;
+      height: 114px; 
+    }
 
     .footer_title {
       font-family: "Shrikhand", cursive;
@@ -12,8 +23,24 @@ footer {
       font-weight: 400;
     }
 
-    a {
+   
+
+    .footer_list {
+      @media screen and (min-width: u.$breakpoint) {
+        display: flex; 
+        padding-right: 5em;   
+    }
+
+    p {
+      @media screen and (min-width: u.$breakpoint){
+        margin-bottom: 0.5em;
+        padding-right: 1em;
+      }
+    }
+
+     a {
       color: white;
       padding-left: 12px;
     }
   }
+}
