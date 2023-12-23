@@ -121,6 +121,10 @@
     margin-top: 0px;
     row-gap: 20px;
     column-gap: 10px;
+    @media screen and (min-width: u.$breakpoint) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     
     .card  {
@@ -132,6 +136,9 @@
        margin: 1.5em;
        height: 251px;
        position: relative;
+       &:hover {transform: scale(1.02);
+        transition: transform 0.2s ease-in-out;
+    }
 
 
        .notif {
@@ -167,6 +174,7 @@
         height: 70%;
         border-radius: 20px 20px 0 0 ;
         object-fit: cover;
+        margin: 0;
     }
 
     
@@ -175,7 +183,8 @@
     .card-content {
         width: 92%;
         display: block;
-        padding-left: 10px;;
+        padding-left: 10px;
+        padding-top: 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;
