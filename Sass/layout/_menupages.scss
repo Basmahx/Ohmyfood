@@ -57,6 +57,7 @@
     width: 93%;
     display: flex;
     justify-content: space-between;
+    
 
     @media screen and (min-width: u.$breakpoint) {
       justify-content: center;
@@ -64,7 +65,7 @@
     
     h1 {
       margin: 0;
-      // font-size: ;
+      font-size: 28px;
     }
 
     i {
