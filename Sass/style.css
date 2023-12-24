@@ -149,6 +149,11 @@ img {
 .restaurants {
   background-color: #F6F6F6;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 0 5em 0 5em;
+  }
+}
 .restaurants h2 {
   margin: 0;
   padding-top: 1.5em;
@@ -216,12 +221,11 @@ img {
   margin: 0;
 }
 .restaurants-cards .card-content {
-  width: 92%;
+  width: 90%;
   display: block;
   padding-left: 10px;
   padding-top: 12px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .restaurants-cards .card-content .card-txt {
@@ -323,7 +327,6 @@ footer .footer_list a {
   margin-top: 25px;
   width: 93%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 @media screen and (min-width: 1024px) {
@@ -472,4 +475,26 @@ footer .footer_list a {
 .btn-container .btn:hover {
   opacity: 0.85;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+.full-heart {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: opacity 1s ease-in-out;
+}
+.full-heart:hover {
+  opacity: 1;
+  background-position: 0% 100%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: opacity 1s ease-in-out;
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 1.4em;
+  margin-top: 0.6em;
 }/*# sourceMappingURL=style.css.map */
