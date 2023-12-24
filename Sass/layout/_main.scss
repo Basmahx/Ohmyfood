@@ -104,6 +104,10 @@
 .restaurants {
     background-color: u.$lighterGray;
 
+    @media screen and (min-width: u.$breakpoint) {
+        padding: 0 5em 0 5em;
+    }
+
     h2 {
         margin: 0;
         padding-top: 1.5em;
@@ -181,12 +185,11 @@
 
 
     .card-content {
-        width: 92%;
+        width: 90%;
         display: block;
         padding-left: 10px;
         padding-top: 12px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
 
         .card-txt {

@@ -1,3 +1,27 @@
 @use '../util' as u;
 
 
+.full-heart {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(u.$secondary-color, u.$primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: opacity 1s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+        background-position: 0% 100%;
+        background-image: linear-gradient(u.$secondary-color, u.$primary-color);
+        transition: opacity 1s ease-in-out;
+    }
+  }
+  
+  
+  
+  .fa-heart {
+    position: absolute;
+    font-size: 1.4em;
+    margin-top: 0.6em;
+  }
