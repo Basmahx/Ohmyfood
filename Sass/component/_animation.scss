@@ -8,20 +8,32 @@
     background-image: linear-gradient(u.$secondary-color, u.$primary-color);
     -webkit-background-clip: text;
     background-clip: text;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 900ms ease-in-out;
 
     &:hover {
         opacity: 1;
         background-position: 0% 100%;
         background-image: linear-gradient(u.$secondary-color, u.$primary-color);
-        transition: opacity 1s ease-in-out;
+        transition: opacity 900ms ease-in-out;
     }
   }
   
   
   
-  .fa-heart {
+  .fa-heart-main {
     position: absolute;
-    font-size: 1.4em;
+    right: 30px;
+    font-size: 1.5em;
     margin-top: 0.6em;
   }
+
+  .fa-heart-pages {
+    position: absolute;
+    font-size: 1.6em;
+    padding-top: 0.3em;
+    @media screen and (max-width: 1023px) {
+       right: 2em;
+      } 
+  }
+
+  
