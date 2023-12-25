@@ -395,6 +395,8 @@ footer .footer_list a {
   flex-direction: row;
   height: 4.3em;
   overflow: hidden;
+  animation: order-cards 1000ms both;
+  animation-delay: 130ms;
 }
 .order .order__card .order__txt {
   display: flex;
@@ -536,5 +538,15 @@ footer .footer_list a {
   }
   100% {
     transform: scaleX(1);
+  }
+}
+@keyframes order-cards {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
