@@ -331,6 +331,8 @@ footer .footer_list a {
   width: 93%;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .container_banner {
@@ -340,6 +342,9 @@ footer .footer_list a {
 .container_banner h1 {
   margin: 0;
   font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 1024px) {
   .container_banner i {
@@ -390,27 +395,33 @@ footer .footer_list a {
   flex-direction: row;
   height: 4.3em;
   overflow: hidden;
+  animation: order-cards 1000ms both;
+  animation-delay: 130ms;
 }
 .order .order__card .order__txt {
   display: flex;
   flex-direction: column;
   width: auto;
   flex: 1;
-  padding-left: 20px;
+  padding-left: 1em;
+  padding-top: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.order .order__card .order__txt h3 {
+  margin: 0;
+  font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.order .order__card .order__txt h3 {
-  padding-top: 0.8em;
-  margin: 0;
-  font-size: 18px;
-}
 .order .order__card .order__txt p {
   font-weight: 300;
   font-size: 15px;
-  padding-bottom: 12px;
-  margin-top: 4px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .order .order__card .order-card__price-container {
   display: flex;
@@ -527,5 +538,15 @@ footer .footer_list a {
   }
   100% {
     transform: scaleX(1);
+  }
+}
+@keyframes order-cards {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
