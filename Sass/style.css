@@ -275,8 +275,8 @@ img {
   height: 10px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50%;
-  opacity: 60%;
-  animation: scaleAnimation 1.5s infinite ease-in-out;
+  opacity: 0.7;
+  animation: scaleAnimation 1000ms backwards infinite ease-in-out alternate;
 }
 .loader__overlay .loader__circle--1 {
   animation-delay: 200ms;
@@ -292,6 +292,21 @@ img {
 }
 .loader__overlay .loader__circle--5 {
   animation-delay: 1000ms;
+}
+.loader__overlay .loader__circle--1 {
+  animation-delay: 0ms;
+}
+.loader__overlay .loader__circle--2 {
+  animation-delay: 200ms;
+}
+.loader__overlay .loader__circle--3 {
+  animation-delay: 400ms;
+}
+.loader__overlay .loader__circle--4 {
+  animation-delay: 600ms;
+}
+.loader__overlay .loader__circle--5 {
+  animation-delay: 800ms;
 }
 
 footer {
@@ -601,20 +616,17 @@ footer .footer_list a {
 }
 @keyframes scaleAnimation {
   0% {
-    transform: scale(0.5);
-    opacity: 45%;
+    transform: scale(0.8);
   }
   50% {
-    transform: scale(1.5);
-    opacity: 85%;
+    transform: scale(1.2);
+    opacity: 0.85;
   }
   75% {
     transform: scale(1);
-    opacity: 75%;
   }
   100% {
     transform: scale(0.5);
-    opacity: 50%;
   }
 }
 @keyframes loader-hide {
