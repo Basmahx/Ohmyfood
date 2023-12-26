@@ -6,7 +6,6 @@
     transition: opacity 1s ease-in-out;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(u.$secondary-color, u.$primary-color);
-    -webkit-background-clip: text;
     background-clip: text;
     transition: opacity 900ms ease-in-out;
 

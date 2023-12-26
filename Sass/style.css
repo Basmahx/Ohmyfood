@@ -233,7 +233,6 @@ img {
 }
 .restaurants-cards .card-content .card-txt {
   margin: 0;
-  gap: 6;
 }
 .restaurants-cards .card-content .card-txt h3 {
   margin: 0;
@@ -568,7 +567,7 @@ footer .footer_list a {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   transition: opacity 900ms ease-in-out;
 }
 .full-heart:hover {
