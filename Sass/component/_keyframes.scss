@@ -19,3 +19,35 @@
         transform: translateY(0);
       }
 }
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(0.5);
+      opacity: 45%;
+    }
+
+    50% {
+      transform: scale(1.5);
+      opacity: 85%;
+    }
+
+    75% {
+       transform: scale(1);
+       opacity: 75%;
+    }
+
+    100% {
+      transform: scale(0.5);
+      opacity: 50%;
+    }
+  }
+
+  @keyframes loader-hide {
+
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+  }

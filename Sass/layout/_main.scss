@@ -214,3 +214,63 @@
 
 }
 
+
+.loader__overlay {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgba(234, 234, 234, 0.9);
+    inset: 0;
+    z-index: 1;
+    animation: loader-hide 1000ms 3500ms both;
+    
+
+    .loader__content {
+        flex-direction: row;
+        animation: loader-hide 500ms 3000ms both;
+        justify-content: center;
+    }
+
+
+   .logo-food {
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    font-weight: 400;
+   }
+ 
+  .loader__circle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+
+  }
+
+
+  .loader__circle {
+    width: 10px; 
+    height: 10px;
+    background: linear-gradient(u.$secondary-color, u.$primary-color);
+    border-radius: 50%;
+    opacity: 60%;
+    animation: scaleAnimation 1.5s infinite ease-in-out;
+   
+  }
+
+
+.loader__circle--1 {
+    animation-delay: 200ms;
+}
+.loader__circle--2 {
+    animation-delay: 400ms;
+}
+.loader__circle--3 {
+    animation-delay: 600ms;
+}
+.loader__circle--4 {
+    animation-delay: 800ms;
+}
+.loader__circle--5 {
+    animation-delay: 1000ms;
+}
+}
