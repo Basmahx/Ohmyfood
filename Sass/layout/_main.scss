@@ -246,31 +246,44 @@
 
   }
 
+  $anim-dur: 1000ms;
+  $anim-delay: calc($anim-dur / 5);  
 
   .loader__circle {
     width: 10px; 
     height: 10px;
     background: linear-gradient(u.$secondary-color, u.$primary-color);
     border-radius: 50%;
-    opacity: 60%;
-    animation: scaleAnimation 1.5s infinite ease-in-out;
+    opacity: 0.70;
+    animation: scaleAnimation $anim-dur backwards infinite ease-in-out alternate;
+    @for $i from 1 through 5 {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
    
   }
 
 
+
 .loader__circle--1 {
-    animation-delay: 200ms;
-}
-.loader__circle--2 {
-    animation-delay: 400ms;
-}
-.loader__circle--3 {
-    animation-delay: 600ms;
-}
-.loader__circle--4 {
-    animation-delay: 800ms;
-}
-.loader__circle--5 {
-    animation-delay: 1000ms;
-}
+    animation-delay: 0ms; 
+  }
+  
+  .loader__circle--2 {
+    animation-delay: 200ms; 
+  }
+  
+  .loader__circle--3 {
+    animation-delay: 400ms; 
+  }
+  
+  .loader__circle--4 {
+    animation-delay: 600ms; 
+  }
+  
+  .loader__circle--5 {
+    animation-delay: 800ms; 
+  }
+
 }
