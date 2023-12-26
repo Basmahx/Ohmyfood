@@ -245,6 +245,55 @@ img {
   padding-top: 4px;
 }
 
+.loader__overlay {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgba(234, 234, 234, 0.9);
+  inset: 0;
+  z-index: 1;
+  animation: loader-hide 1000ms 3500ms both;
+}
+.loader__overlay .loader__content {
+  flex-direction: row;
+  animation: loader-hide 500ms 3000ms both;
+  justify-content: center;
+}
+.loader__overlay .logo-food {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  font-weight: 400;
+}
+.loader__overlay .loader__circle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.loader__overlay .loader__circle {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50%;
+  opacity: 60%;
+  animation: scaleAnimation 1.5s infinite ease-in-out;
+}
+.loader__overlay .loader__circle--1 {
+  animation-delay: 200ms;
+}
+.loader__overlay .loader__circle--2 {
+  animation-delay: 400ms;
+}
+.loader__overlay .loader__circle--3 {
+  animation-delay: 600ms;
+}
+.loader__overlay .loader__circle--4 {
+  animation-delay: 800ms;
+}
+.loader__overlay .loader__circle--5 {
+  animation-delay: 1000ms;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -548,5 +597,31 @@ footer .footer_list a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 45%;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 85%;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 75%;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 50%;
+  }
+}
+@keyframes loader-hide {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
   }
 }/*# sourceMappingURL=style.css.map */
