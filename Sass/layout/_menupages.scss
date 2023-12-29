@@ -3,12 +3,12 @@
 
 .header {
     display: flex;
-    align-items: center; // requires modification 
+    align-items: center; 
 
     &_arrow {
         padding-left: 1em;
         font-size: 1.5em;
-        // margin-top: 20px;  // requires modification 
+
         
 
         a {
@@ -90,8 +90,7 @@
 
   display: flex;
   flex-direction: column;
-  // margin-left: 1em;
-  // margin-right: 1em;
+
 
   @media screen and (min-width: u.$breakpoint) {
     margin-left: 20%;
@@ -117,7 +116,7 @@
   background-color: u.$light-green-background;
   border: 3px;
   margin-top: 6px;
-  margin-bottom: 12px; // might require change
+  margin-bottom: 12px; 
 }
 
 
