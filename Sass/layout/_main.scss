@@ -256,8 +256,7 @@
 
   }
 
-  $anim-dur: 1000ms;
-  $anim-delay: calc($anim-dur / 5);  
+
 
   .loader__circle {
     width: 10px; 
@@ -266,11 +265,7 @@
     border-radius: 50%;
     opacity: 0.70;
     animation: scaleAnimation 1000ms backwards infinite ease-in-out alternate;
-    @for $i from 1 through 5 {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-        }
-    }
+   
    
   }
 
