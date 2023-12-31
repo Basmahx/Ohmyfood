@@ -3,7 +3,7 @@
 
 
 
-/*** explor & btn ***/ 
+/*** explore & btn ***/ 
 
 .titre-btn {
     background-color: u.$lighterGray;
@@ -145,7 +145,6 @@
        max-width: none;
        // width: 100%;
        gap: 4px;
-       // padding: 10px;
        border-radius: 20px;
        margin: 1.5em;
        height: 251px;
@@ -257,8 +256,7 @@
 
   }
 
-  $anim-dur: 1000ms;
-  $anim-delay: calc($anim-dur / 5);  
+
 
   .loader__circle {
     width: 10px; 
@@ -266,12 +264,8 @@
     background: linear-gradient(u.$secondary-color, u.$primary-color);
     border-radius: 50%;
     opacity: 0.70;
-    animation: scaleAnimation $anim-dur backwards infinite ease-in-out alternate;
-    @for $i from 1 through 5 {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-        }
-    }
+    animation: scaleAnimation 1000ms backwards infinite ease-in-out alternate;
+   
    
   }
 
