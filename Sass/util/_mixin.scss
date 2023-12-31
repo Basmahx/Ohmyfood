@@ -22,7 +22,7 @@
 
 }
 
-@mixin ellipse {  // is cursed for some reason, and wont work properly 
+@mixin ellipse { 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
