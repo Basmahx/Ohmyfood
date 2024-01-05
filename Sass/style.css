@@ -48,7 +48,7 @@ a, a:visited, a:active {
     opacity: 0.85;
   }
   75% {
-    transform: scale(1);
+    transform: scale(0.8);
   }
   100% {
     transform: scale(0.5);
@@ -58,7 +58,7 @@ a, a:visited, a:active {
   0% {
     transform: scale(1);
   }
-  85% {
+  95% {
     transform: scale(1);
     opacity: 0;
   }
@@ -87,7 +87,7 @@ img {
   margin-bottom: 14px;
 }
 
-/*** explor & btn ***/
+/*** explore & btn ***/
 .titre-btn {
   background-color: #F6F6F6;
   text-align: center;
@@ -303,11 +303,11 @@ img {
   background-color: rgba(234, 234, 234, 0.9);
   inset: 0;
   z-index: 1;
-  animation: loader-hide 1000ms 3500ms both;
+  animation: loader-hide 1000ms 2500ms both;
 }
 .loader__overlay .loader__content {
   flex-direction: row;
-  animation: loader-hide 500ms 3000ms both;
+  animation: loader-hide 1000ms 2000ms both;
   justify-content: center;
 }
 .loader__overlay .logo-food {
@@ -329,34 +329,19 @@ img {
   animation: scaleAnimation 1000ms backwards infinite ease-in-out alternate;
 }
 .loader__overlay .loader__circle--1 {
-  animation-delay: 200ms;
-}
-.loader__overlay .loader__circle--2 {
-  animation-delay: 400ms;
-}
-.loader__overlay .loader__circle--3 {
-  animation-delay: 600ms;
-}
-.loader__overlay .loader__circle--4 {
-  animation-delay: 800ms;
-}
-.loader__overlay .loader__circle--5 {
-  animation-delay: 1000ms;
-}
-.loader__overlay .loader__circle--1 {
   animation-delay: 0ms;
 }
 .loader__overlay .loader__circle--2 {
-  animation-delay: 200ms;
+  animation-delay: 100ms;
 }
 .loader__overlay .loader__circle--3 {
-  animation-delay: 400ms;
+  animation-delay: 200ms;
 }
 .loader__overlay .loader__circle--4 {
-  animation-delay: 600ms;
+  animation-delay: 300ms;
 }
 .loader__overlay .loader__circle--5 {
-  animation-delay: 800ms;
+  animation-delay: 400ms;
 }
 
 footer {
@@ -556,8 +541,8 @@ footer .footer_list a {
   justify-content: center;
   overflow: hidden;
   height: 100%;
-  transform: scaleX(0);
-  transition: width 600s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform: translateX(100%);
+  transition: transform 600ms;
 }
 .order .order__card .order-card__notif .fa-circle-check {
   color: white;
@@ -568,7 +553,7 @@ footer .footer_list a {
 .order .order__card:hover .order-card__notif {
   width: 3.6em;
   margin-left: 0.9em;
-  transform: scaleX(1);
+  transform: translateX(0);
 }
 .order .order__card:hover .fa-circle-check {
   transform: scale(1);
