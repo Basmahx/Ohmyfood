@@ -233,12 +233,12 @@
     background-color: rgba(234, 234, 234, 0.9);
     inset: 0;
     z-index: 1;
-    animation: loader-hide 1000ms 3500ms both;
+    animation: loader-hide 1000ms 2500ms both;
     
 
     .loader__content {
         flex-direction: row;
-        animation: loader-hide 500ms 3000ms both;
+        animation: loader-hide 1000ms 2000ms both;
         justify-content: center;
     }
 
@@ -276,19 +276,19 @@
   }
   
   .loader__circle--2 {
-    animation-delay: 200ms; 
+    animation-delay: 100ms; 
   }
   
   .loader__circle--3 {
-    animation-delay: 400ms; 
+    animation-delay: 200ms; 
   }
   
   .loader__circle--4 {
-    animation-delay: 600ms; 
+    animation-delay: 300ms; 
   }
   
   .loader__circle--5 {
-    animation-delay: 800ms; 
+    animation-delay: 400ms; 
   }
 
 }
